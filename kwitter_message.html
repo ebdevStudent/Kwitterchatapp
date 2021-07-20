@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kwitter</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    </head>
+    <body style="background-color:lightblue;">
+        <button id="logout" onclick="logout()" class="glyphicon glyphicon-log-out btn btn-danger"> Logout</button>
+        <center>
+            <h1 class="header">
+                Kwitter
+                <sup>
+                    <img src="envelope_image.jpg" width="40" height="40">
+                </sup>
+            </h1> 
+            <div id="output" style="text-align:left;margin-bottom:70px;"></div>
+            <div class="input_msg_div" >
+                <label>Send:</label>
+                <br>
+                <input type="text" class="form control" id="input_msg" placeholder="Type a message">
+                <br>
+                <button onclick="send();" id="btn_msg" class="btn btn-success">Send:</button>
+                <br>
+            </div>
+        </center>
+    </body>
+    <script src="kwitter_message.js"></script>
+</html>        

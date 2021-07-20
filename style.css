@@ -1,0 +1,24 @@
+.login_div{
+    background: lightblue;
+    float:none !important; 
+    border-radius:15px;
+}
+.input_msg_div{
+    position:fixed;
+    bottom:0px;
+    width:100%;
+    background:rgba(255,255,255,0.8);
+}
+.input_msg_div button{
+    margin-top:15px;
+    width:50%;
+}
+.input_msg_div label{
+    color:black ;
+}
+.input_msg_div input{
+    width:80%;
+}
+.user_tick{
+    width:30px;
+}

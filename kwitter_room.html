@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kwitter</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    </head>
+    <body style="background-color:lightblue;">
+        <button id="logout" onclick="logout()" class="glyphicon glyphicon-log-out btn btn-danger"> Logout</button>
+        <center>
+            <h1 class="header">
+                Kwitter
+                <sup>
+                    <img src="envelope_image.jpg" width="40" height="40">
+                </sup>
+            </h1>
+            
+
+            <h3 id="h3user_name" class="color_white"></h3>
+            <div class="form_group login_div_roompg">
+                <label>Room Name: </label>
+                <input type="text" id="room_name" class="form-control" placeholder="#Room Name" style="width:55%;">
+            </div>
+            <br>
+            <button class="btn btn-success" id="btn_add_room" onclick="addroom()">#Add Room</button>
+            <h3 class="color_white">#TRENDING ROOMS!</h3>
+            <div id="output"></div>
+        </center>
+        <script src="kwitter_room.js"></script>
+    </body>
+</html>
